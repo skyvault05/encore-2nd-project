@@ -1,0 +1,11 @@
+---
+# tasks file for web-server
+#Apache HTTP Server 설치
+- yum:
+      name: httpd
+      state: installed
+#워드프레스 파일 복사
+- copy:
+      src: wordpress-5.9.3.tar.gz
+      dest: /var/www/html/
+ 
